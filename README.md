@@ -55,4 +55,4 @@ you can compile a release build by running `./build_release.sh`.
 
 The resulting binary will be in `target/wasm32-wasi/release/backend.wasm`, to run the server you need to call `lunatic backend.wasm`
 
-The server wasm is self-contained, it includes the frontend statically baked into the server wasm and serves those files from memory. This means that you will only need the `lunatic` binary and the `backend.wasm` file for deployments
+The server wasm is self-contained, it includes the frontend statically baked into the binary and serves those files from memory. This means that you will only need the `lunatic` binary and the `backend.wasm` file for deployments
