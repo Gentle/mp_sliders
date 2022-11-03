@@ -1,0 +1,11 @@
+[build]
+dist="./static"
+
+[watch]
+ignore=[
+    "backend"
+]
+
+[[proxy]]
+backend = "ws://localhost:3000/websocket"
+ws = true
